@@ -25,9 +25,8 @@ export default function About() {
 
         {/* Resume Section */}
         <section id="resume">
-          <h3 className="text-2xl font-semibold mb-2">Resume</h3>
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold mb-2">Education</h4>
+            <h4 className="text-2xl font-semibold mb-2">Education</h4>
             <div className="rounded-xl p-6 bg-gray-100">
               <h4 className="text-base font-medium">
                 Slovak University of Technology in Bratislava
@@ -48,7 +47,7 @@ export default function About() {
 
           {/* Skills Section */}
           <div className="space-y-4 mt-6">
-            <h4 className="text-lg font-semibold mb-2">Skills</h4>
+            <h4 className="text-2xl font-semibold mb-2">Skills</h4>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 bg-gray-100">

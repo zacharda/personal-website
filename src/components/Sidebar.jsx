@@ -4,18 +4,17 @@ import { Menu, X } from "lucide-react";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // get current URL path
+  const location = useLocation();
 
   const linkClasses = (path) =>
     `block ${
       location.pathname === path
-        ? "text-gray-800 font-medium" // active page style
+        ? "text-gray-800 font-medium"
         : "text-gray-600 hover:text-gray-800"
     }`;
 
   return (
     <>
-      {/* Mobile Navbar / Hamburger */}
       <div className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50 flex items-center justify-start p-4">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -34,7 +33,7 @@ export default function Sidebar() {
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
           md:translate-x-0`}
       >
-        <h1 className="text-2xl font-bold mb-1">David Zachar</h1>
+        <h1 className="text-2xl font-bold mb-1">Dávid Zachar</h1>
         <p className="text-sm text-gray-600 mb-6">
           Student @ FIIT STU in Bratislava
         </p>
